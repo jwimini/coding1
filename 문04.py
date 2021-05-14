@@ -1,13 +1,11 @@
 def solution(arr):
    left = 0
-   right = arr의 길이-1
+   right = len(arr) - 1
 
-   #TODO: @@@ 빈칸 채우기기
-  while @@@:
+   #TODO: @@@ 빈칸 채우기
+   while @@@:
        # arr[left]과 arr[right]의 값을 서로 바꿈
-       temp = arr[left]
-       arr[left] = arr[right]
-       arr[right] = temp
+       arr[left], arr[right] = arr[right],arr[left]
 
        left += 1
        right -= 1
