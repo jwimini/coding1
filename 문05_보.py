@@ -5,10 +5,11 @@
 a = 31
 count = 0
 
-while a:
-    # if a % 10 == 3 or a % 10 == 6 or a % 10 == 9
-    if a % 10 in [3, 6, 9]:
-        count += 1
-    a = a // 10
+for x in range(1, a+1):  # 30까지만 반복문 실행함
+    while x:
+        # if a % 10 == 3 or a % 10 == 6 or a % 10 == 9
+        if x % 10 in [3, 6, 9]:
+            count += 1
+        x = x // 10
 
 print(count)
