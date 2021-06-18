@@ -19,8 +19,8 @@ def solution(numbers):
             if (두수의합) not in answer:
                 #list 끝부분에 값을 삽입
                 answer.append(두수의합)
-    answer.sort()
-    return answer
+    #set (집합) 처리를 하면서 중복제거와 오름차순 정렬을 함
+     return list(set(answer))
 
 
 if __name__ == "__main__":
